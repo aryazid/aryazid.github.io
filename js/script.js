@@ -1,9 +1,16 @@
+/* nasdkadnlk*/
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector("navbar");
 
+menuIcon.onClick =() => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
 
 /*=asda==*/
-let navbar = document.querySelector("nav");
+
 let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("nav ul");
+let navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll = () => {
   sections.forEach((sec) => {
@@ -16,7 +23,7 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector("nav ul[href*=" + id + "]")
+          .querySelector("nav a[href*=" + id + "]")
           .classList.add("active");
       });
     }
@@ -33,9 +40,9 @@ function scroll() {
      document.body.scrollTop > 20 ||
      document.documentElement.scrollTop > 20
   ) {
-     document.getElementById("nav").style.top = "-80px";
+     document.getElementById("navi").style.top = "-80px";
   } else {
-     document.getElementById("nav").style.top = "0";
+     document.getElementById("navi").style.top = "0";
   }
 }
 
