@@ -1,12 +1,11 @@
-/* nasdkadnlk*/
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector("navbar");
+/* responsiv nav*/
+let menu = document.querySelector('#menu-icon')
+let navbar = document.querySelector('.navbar')
 
-menuIcon.onClick =() => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('open');
 }
-
 /*=asda==*/
 
 let sections = document.querySelectorAll("section");
@@ -30,21 +29,26 @@ window.onscroll = () => {
   });
 };
 
-/*SCROLL */
-window.onscroll = function() {
-  scroll();
-};
 
-function scroll() {
-  if (
-     document.body.scrollTop > 20 ||
-     document.documentElement.scrollTop > 20
-  ) {
-     document.getElementById("navi").style.top = "-80px";
-  } else {
-     document.getElementById("navi").style.top = "0";
-  }
-}
+/*SCROLL */
+document.addEventListener("DOMContentLoaded", function () {
+  var prevScrollPos = window.scrollY;
+
+  window.addEventListener("scroll", function () {
+    var currentScrollPos = window.scrollY;
+
+    if (prevScrollPos > currentScrollPos) {
+      // Scrolling up
+      document.querySelector("header").classList.remove("hidden");
+    } else {
+      // Scrolling down
+      document.querySelector("header").classList.add("hidden");
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+});
+
 
 ScrollReveal({
   reset: true,
