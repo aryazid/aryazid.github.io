@@ -19,11 +19,6 @@
     <script defer src="js/hover.js"></script>
     <!-- Google fonts-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
       rel="stylesheet"
       type="text/css"
@@ -39,17 +34,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* Ganti lebar gambar sesuai kebutuhan */
       .owl-carousel .item img {
         width: 100%;
         height: 100%;
       }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        transition: top 0.3s;
+        z-index: 10;
+      }
+      .navbar-hidden {
+        top: -100px; /* Sesuaikan dengan tinggi navbar */
+      }
     </style>
   </head>
   <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg text-uppercase" id="mainNav">
+    <nav
+      class="navbar navbar-expand-lg text-uppercase navbar-hidden"
+      id="mainNav"
+    >
       <div class="container">
         <a class="navbar-brand" href="#page-top">Aryazid</a>
         <button
@@ -153,7 +165,7 @@
                 <div class="info">
                   <div class="row profil">
                     <div class="col-sm-8">
-                      <h5>Nama</h5>
+                      <h5>Name</h5>
                       <p>Muhammad Aryazid</p>
                       <h5>Email</h5>
                       <p>aryazid10@gmail.com</p>
@@ -161,12 +173,12 @@
                       <p>Gemini</p>
                     </div>
                     <div class="col-sm-4">
-                      <h5>Umur</h5>
+                      <h5>Age</h5>
                       <p>21 Tahun</p>
                       <h5>Gender</h5>
-                      <p>Laki-laki</p>
+                      <p>Male</p>
                       <h5>Status</h5>
-                      <p>Mahasiswa</p>
+                      <p>Student</p>
                     </div>
                   </div>
                 </div>
@@ -179,7 +191,6 @@
 
     <!-- Experience Section-->
     <section class="page-section-experience" id="experience">
-      <div style="height: 23px"></div>
       <h2 class="experience-title text-white">Experience</h2>
       <div class="experience-section">
         <div class="container">
@@ -191,8 +202,9 @@
                   <div class="d-flex align-items-center">
                     <img
                       src="assets/img/asyx_logo.png"
+                      alt="Hacktiv8 Indonesia Logo"
                     />
-                    <div class="ml-3">
+                    <div style="width: 100%" class="ml-3">
                       <h3><span style="color: #fdd7ab">Quality Assurance Engineer</span></h3>
                       <h5 class="experience-header">
                         PT. ASYX Indonesia <strong><span style="color: #dbb487">Apr 2024 - Present</span></strong>
@@ -238,7 +250,7 @@
                       src="assets/img/Motionpay.png"
                       alt="Hacktiv8 Indonesia Logo"
                     />
-                    <div class="ml-3">
+                    <div style="width: 100%" class="ml-3">
                       <h3><span style="color: #fdd7ab">Quality Assurance Manual</span></h3>
                       <h5 class="experience-header">
                         MotionPay MNC Group
@@ -294,10 +306,10 @@
                       src="assets/img/himsi.png"
                       alt="Hacktiv8 Indonesia Logo"
                     />
-                    <div class="ml-3">
+                    <div style="width: 100%" class="ml-3">
                       <h3><span style="color: #fdd7ab">Staff</span></h3>
                       <h5 class="experience-header">
-                        HIMSI UBSI
+                        Himpunan Mahasiswa Sistem Informasi UBSI
                         <strong><span style="color: #dbb487">Sep 2020 - Jan 2024</span></strong>
                       </h5>
                       <ul>
@@ -346,7 +358,6 @@
     <!-- Interest Section -->
     <!-- untuk merubah foto. buka hover.js disana ada addHoverEffect. rubahlah sesuai class divnya yang di halaman ini -->
     <section class="page-section-interest" id="interest">
-      <div style="height: 23px"></div>
       <h2 class="interest-title text-white">Interest</h2>
       <div class="interest-section">
         <div class="container">
@@ -357,11 +368,11 @@
                   <img
                     id="default-image-sw"
                     src="assets/img/Software1.png"
-                    alt="Software"
+                    alt="Blockchain"
                   />
                 </div>
                 <div class="caption">
-                  <p class="text-center">Software Development</p>
+                  <p class="text-center fw-bold">Software Development</p>
                 </div>
               </div>
             </div>
@@ -375,7 +386,7 @@
                   />
                 </div>
                 <div class="caption">
-                  <p class="text-center">AI & Machine Learning</p>
+                  <p class="text-center fw-bold">AI & Machine Learning</p>
                 </div>
               </div>
             </div>
@@ -389,7 +400,7 @@
                   />
                 </div>
                 <div class="caption">
-                  <p class="text-center">Blockchain</p>
+                  <p class="text-center fw-bold">Blockchain</p>
                 </div>
               </div>
             </div>
@@ -403,7 +414,7 @@
                   />
                 </div>
                 <div class="caption">
-                  <p class="text-center">Investment</p>
+                  <p class="text-center fw-bold">Investment</p>
                 </div>
               </div>
             </div>
@@ -417,7 +428,7 @@
                   />
                 </div>
                 <div class="caption">
-                  <p class="text-center">Books</p>
+                  <p class="text-center fw-bold">Books</p>
                 </div>
               </div>
             </div>
@@ -428,7 +439,6 @@
 
     <!-- goals Section-->
     <section class="page-section-goals" id="goals">
-      <div style="height: 23px"></div>
       <h2 class="goals-title text-white">Goals</h2>
       <div class="goals-section">
         <div
@@ -446,7 +456,7 @@
         <small>Copyright &copy; Muhammad Aryazid 2024</small>
       </div>
     </div>
-    
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
@@ -490,6 +500,31 @@
             }
           });
         });
+      });
+    </script>
+    <script>
+      // JavaScript untuk mengatur arah scroll dan visibilitas navbar
+      let lastScrollTop = 0;
+      const mainNav = document.getElementById("mainNav");
+
+      // Pastikan navbar terlihat saat halaman pertama kali dimuat
+      mainNav.classList.remove("navbar-hidden");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 0) {
+          // Di bagian atas halaman, jangan sembunyikan navbar
+          mainNav.classList.remove("navbar-hidden");
+        } else if (currentScroll > lastScrollTop) {
+          // Scroll Down (Gulir ke bawah)
+          mainNav.classList.add("navbar-hidden");
+        } else {
+          // Scroll Up (Gulir ke atas)
+          mainNav.classList.remove("navbar-hidden");
+        }
+        lastScrollTop = currentScroll;
       });
     </script>
   </body>

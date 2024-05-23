@@ -32,7 +32,7 @@ addHoverEffect(".hover-thumbnail-ai", "default-image-ai", "assets/img/AIML1.png"
 addHoverEffect(".hover-thumbnail", "default-image", "assets/img/Blockchain1.png", "assets/img/Blockchain2.png");
 
 // Investment
-addHoverEffect(".hover-thumbnail-inv", "default-image-inv", "assets/img/investment1.png", "assets/img/Investment2.png");
+addHoverEffect(".hover-thumbnail-inv", "default-image-inv", "assets/img/Investment1.png", "assets/img/Investment2.png");
 
 // Books
 addHoverEffect(".hover-thumbnail-bks", "default-image-bks", "assets/img/Books1.png", "assets/img/Books2.png");
